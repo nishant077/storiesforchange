@@ -49,7 +49,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className='main-container min-h-screen w-full bg-[#F2B93F] md:py-10 py-5'>
+      <div className='main-container h-screen w-full bg-[#F2B93F] md:py-10 py-5'>
         <div ref={contentRef} className='flex flex-col items-center gap-5'> 
           <div className='text-center'>
             <h2 className='text-6xl font-bold text-black'>Stories for change</h2>
