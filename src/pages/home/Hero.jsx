@@ -72,7 +72,7 @@ const Hero = () => {
         
         {/* Added positioning to ensure video stays at bottom */}
         <div className='relative w-full'>
-          <div ref={videoContainerRef} className='w-[20%] h-[20%] py-5 relative'>
+          <div ref={videoContainerRef} className='max-w-[20%] max-h-[20%] py-5 relative'>
             <video ref={videoRef} loop muted autoPlay src={exhibition} className='rounded-lg object-cover w-full h-full'/>
           </div>
         </div>
