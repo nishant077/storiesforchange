@@ -25,7 +25,7 @@ const Hero = () => {
           trigger: ".main-container",
           start: "top top", 
           end: "+=800", // Reduced scroll distance for quicker completion
-          scrub: 0.8, // Slightly slower scrub for smoother sync
+          scrub: 1, // Slightly slower scrub for smoother sync
           markers: false,
           anticipatePin: 1,
           invalidateOnRefresh: true
@@ -71,7 +71,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className='main-container min-h-screen w-full bg-[#F2B93F] md:py-10 py-5 overflow-x-hidden relative'>
+      <div className='main-container scroll-smooth min-h-screen w-full bg-[#F2B93F] md:py-10 py-5 overflow-x-hidden relative'>
         <div 
           ref={contentRef} 
           className='flex flex-col items-center gap-5  transition-opacity'

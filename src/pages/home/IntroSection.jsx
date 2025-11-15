@@ -4,12 +4,14 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from "gsap/SplitText";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(useGSAP,ScrollTrigger,SplitText);
 
 const IntroSection = () => {
 
   const aboutRef = useRef(null);
+  const navigate = useNavigate();
 
   useGSAP(() => {
     // Text fade effect
@@ -33,6 +35,11 @@ const IntroSection = () => {
     });
   }, { scope: aboutRef });
 
+
+  const handleClick = () => {
+    navigate('/about');
+};
+
   return (
     <>
       <div ref={aboutRef} className='main-container h-screen rounded-tl-[60px] rounded-tr-[60px] relative z-10'>
@@ -50,7 +57,7 @@ dominant development narratives.
 </div>
       </div>
     <div className="flex items-center group cursor-pointer">
-                <button className="bg-white p-4 font-bold text-sm text-black rounded-full transition-all duration-300 group-hover:pr-6">
+                <button onClick={handleClick} className="bg-white p-4 font-bold text-sm text-black rounded-full transition-all duration-300 group-hover:pr-6 cursor-pointer">
                   About Us 
                 </button>
                 <div className="p-4 bg-white rounded-full relative flex justify-center items-center -ml-1 transition-all duration-300 group-hover:ml-2">

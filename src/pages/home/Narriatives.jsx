@@ -6,14 +6,14 @@ const Narriatives = () => {
     <>
       {/* Title Wrapper */}
       <div className="bg-[#F2B93F] text-black">
-        <div className='main-container pb lg:pb-12'>
+        <div className='main-container pb-5 lg:pb-12'>
           <h3>OUR Stories</h3>
         </div>
       </div>
 
       {/* Services List */}
       <div className='relative'>
-        <div className="bg-[#2f6b67] text-white pt-16 lg:pt-20 pb-[15rem] sticky top-4">
+        <div className="bg-[#2f6b67] text-white pt-16 lg:pt-20 pb-[5rem] sticky top-4">
           <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-start">
               
             {/* Left side */}
